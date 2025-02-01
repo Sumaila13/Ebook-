@@ -5,6 +5,7 @@ print(" YOU ARE WELCOME TO GAM EBOOK CONVERSION TO AUDIO (GEMA)")
 print("We are here to make your work easy")
 
 name= input("Enter your name : ")
+Company= input("Enter your company or institution name : ")
 
 
 def signUp():
