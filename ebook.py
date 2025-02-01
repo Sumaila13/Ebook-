@@ -5,14 +5,11 @@ print(" YOU ARE WELCOME TO GAM EBOOK CONVERSION TO AUDIO (GEMA)")
 print("We are here to make your work easy")
 
 
-
-
-
 def signUp():
     print("Sign up to  GEMA")
     try:
         name=str(input("Enter your name : "))
-        emial=input("Enter your email : ")
+        email=input("Enter your email : ")
         password=input("Enter your password : ")
         contact=int(input("Enter your contact : "))
     except ValueError:
