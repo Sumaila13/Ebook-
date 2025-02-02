@@ -1,5 +1,6 @@
 import pyttsx3
 import PyPDF2
+import time
 
 print(" YOU ARE WELCOME TO GAM EBOOK CONVERSION TO AUDIO (GEMA)")
 print("We are here to make your work easy")
@@ -31,8 +32,16 @@ def ebook():
     Pages = pdfReader.pages[Pages-1]
     text = Pages.extract_text()
     speaker = pyttsx3.init()
+    start_time = time.time()
     speaker.say(text)
     speaker.runAndWait()
+    end_time = time.time()
+
+    duration = end_time - start_time
+    print(f"Audio Duration: {duration:.2f} seconds")
+
+
+
 
 
 def main():
